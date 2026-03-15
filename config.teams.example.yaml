@@ -1,0 +1,113 @@
+# Team-based configuration example for semi-finals.
+# Keep `config.yaml` for the current player tracker.
+# Put the semi-final roster in `config.semifinals.yaml` so the team overlay can
+# run in parallel with the player overlay on the same server.
+
+server: "en"
+contest_id: 970393
+
+teams:
+  - name: "Team A1"
+    group: "Semi-final A"
+    players:
+      - name: "Player A1-1"
+        account_id: 100000001
+      - name: "Player A1-2"
+        account_id: 100000002
+      - name: "Player A1-3"
+        account_id: 100000003
+      - name: "Player A1-4"
+        account_id: 100000004
+
+  - name: "Team A2"
+    group: "Semi-final A"
+    players:
+      - name: "Player A2-1"
+        account_id: 100000005
+      - name: "Player A2-2"
+        account_id: 100000006
+      - name: "Player A2-3"
+        account_id: 100000007
+      - name: "Player A2-4"
+        account_id: 100000008
+
+  - name: "Team A3"
+    group: "Semi-final A"
+    players:
+      - name: "Player A3-1"
+        account_id: 100000009
+      - name: "Player A3-2"
+        account_id: 100000010
+      - name: "Player A3-3"
+        account_id: 100000011
+      - name: "Player A3-4"
+        account_id: 100000012
+
+  - name: "Team A4"
+    group: "Semi-final A"
+    players:
+      - name: "Player A4-1"
+        account_id: 100000013
+      - name: "Player A4-2"
+        account_id: 100000014
+      - name: "Player A4-3"
+        account_id: 100000015
+      - name: "Player A4-4"
+        account_id: 100000016
+
+  - name: "Team B1"
+    group: "Semi-final B"
+    players:
+      - name: "Player B1-1"
+        account_id: 100000017
+      - name: "Player B1-2"
+        account_id: 100000018
+      - name: "Player B1-3"
+        account_id: 100000019
+      - name: "Player B1-4"
+        account_id: 100000020
+
+  - name: "Team B2"
+    group: "Semi-final B"
+    players:
+      - name: "Player B2-1"
+        account_id: 100000021
+      - name: "Player B2-2"
+        account_id: 100000022
+      - name: "Player B2-3"
+        account_id: 100000023
+      - name: "Player B2-4"
+        account_id: 100000024
+
+  - name: "Team B3"
+    group: "Semi-final B"
+    players:
+      - name: "Player B3-1"
+        account_id: 100000025
+      - name: "Player B3-2"
+        account_id: 100000026
+      - name: "Player B3-3"
+        account_id: 100000027
+      - name: "Player B3-4"
+        account_id: 100000028
+
+  - name: "Team B4"
+    group: "Semi-final B"
+    players:
+      - name: "Player B4-1"
+        account_id: 100000029
+      - name: "Player B4-2"
+        account_id: 100000030
+      - name: "Player B4-3"
+        account_id: 100000031
+      - name: "Player B4-4"
+        account_id: 100000032
+
+games_count: 4
+starting_points: 25000
+uma: [45, 5, -15, -35]
+oka: 0
+
+host: "0.0.0.0"
+port: 8765
+poll_interval: 10

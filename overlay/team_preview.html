@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Team Tournament Tracker Preview</title>
+    <link rel="stylesheet" href="team_style.css?v=20260315-team-preview">
+</head>
+<body>
+    <div id="scoreboard"></div>
+
+    <script>
+    window.TEAM_PREVIEW_STATE = {
+        games_count: 4,
+        teams: [
+            {
+                id: "team-a1",
+                name: "Team A1",
+                group: "Semi-final A",
+                total_score: 118.4,
+                provisional_score: 129.2,
+                active_players: 2,
+            },
+            {
+                id: "team-a2",
+                name: "Team A2",
+                group: "Semi-final A",
+                total_score: 74.8,
+                provisional_score: 74.8,
+                active_players: 0,
+            },
+            {
+                id: "team-a3",
+                name: "Team A3",
+                group: "Semi-final A",
+                total_score: -11.6,
+                provisional_score: 3.7,
+                active_players: 1,
+            },
+            {
+                id: "team-a4",
+                name: "Team A4",
+                group: "Semi-final A",
+                total_score: -42.5,
+                provisional_score: -42.5,
+                active_players: 0,
+            },
+            {
+                id: "team-b1",
+                name: "Team B1",
+                group: "Semi-final B",
+                total_score: 81.1,
+                provisional_score: 81.1,
+                active_players: 0,
+            },
+            {
+                id: "team-b2",
+                name: "Team B2",
+                group: "Semi-final B",
+                total_score: 26.4,
+                provisional_score: 35.0,
+                active_players: 1,
+            },
+            {
+                id: "team-b3",
+                name: "Team B3",
+                group: "Semi-final B",
+                total_score: -8.3,
+                provisional_score: -8.3,
+                active_players: 0,
+            },
+            {
+                id: "team-b4",
+                name: "Team B4",
+                group: "Semi-final B",
+                total_score: -37.2,
+                provisional_score: -37.2,
+                active_players: 0,
+            },
+        ],
+        players: []
+    };
+    </script>
+    <script src="team_app.js?v=20260315-team-preview"></script>
+</body>
+</html>

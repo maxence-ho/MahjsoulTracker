@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Preview Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scoreboard">
+        <!-- Player 1: in game with live points -->
+        <div class="card">
+            <div class="card-top">
+                <span class="rank rank-1">1</span>
+                <span class="name">PlayerOne</span>
+                <span class="score-stack">
+                    <span class="live-pts primary">32,400</span>
+                    <span class="total subtle pos">+18.5</span>
+                </span>
+            </div>
+            <div class="card-bottom">
+                <span class="status status-in_game">live</span>
+                <span class="dots">
+                    <span class="dot p1">1</span>
+                    <span class="dot p2">2</span>
+                    <span class="dot empty current-game"></span>
+                    <span class="dot empty"></span>
+                </span>
+            </div>
+        </div>
+        <!-- Player 2: in game with live points, negative UMA -->
+        <div class="card">
+            <div class="card-top">
+                <span class="rank rank-2">2</span>
+                <span class="name">PlayerTwo</span>
+                <span class="score-stack">
+                    <span class="live-pts primary">18,100</span>
+                    <span class="total subtle neg">-5.2</span>
+                </span>
+            </div>
+            <div class="card-bottom">
+                <span class="status status-in_game">live</span>
+                <span class="dots">
+                    <span class="dot p3">3</span>
+                    <span class="dot empty current-game"></span>
+                    <span class="dot empty"></span>
+                    <span class="dot empty"></span>
+                </span>
+            </div>
+        </div>
+        <!-- Player 3: idle, no live points -->
+        <div class="card">
+            <div class="card-top">
+                <span class="rank rank-3">3</span>
+                <span class="name">PlayerThree</span>
+                <span class="total pos">+4.0</span>
+            </div>
+            <div class="card-bottom">
+                <span class="status status-idle">wait</span>
+                <span class="dots">
+                    <span class="dot p2">2</span>
+                    <span class="dot empty"></span>
+                    <span class="dot empty"></span>
+                    <span class="dot empty"></span>
+                </span>
+            </div>
+        </div>
+        <!-- Player 4: in game, zero UMA -->
+        <div class="card">
+            <div class="card-top">
+                <span class="rank rank-4">4</span>
+                <span class="name">LongPlayerName123</span>
+                <span class="score-stack">
+                    <span class="live-pts primary">25,000</span>
+                    <span class="total subtle zero">0.0</span>
+                </span>
+            </div>
+            <div class="card-bottom">
+                <span class="status status-in_game">live</span>
+                <span class="dots">
+                    <span class="dot empty current-game"></span>
+                    <span class="dot empty"></span>
+                    <span class="dot empty"></span>
+                    <span class="dot empty"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

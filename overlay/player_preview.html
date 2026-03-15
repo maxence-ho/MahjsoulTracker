@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Player Tournament Tracker Preview</title>
+    <link rel="stylesheet" href="style.css?v=20260315-player-preview">
+</head>
+<body>
+    <div id="scoreboard"></div>
+
+    <script>
+    window.PLAYER_PREVIEW_STATE = {
+        games_count: 4,
+        players: [
+            {
+                account_id: 1001,
+                name: "Anh_",
+                nickname: "Anh_",
+                display_name: "Anh_",
+                status: "in_game",
+                current_points: 34200,
+                current_round: "E3",
+                games: [
+                    { placement: 1 },
+                    { placement: 2 },
+                ],
+                games_played: 2,
+                total_score: 48.5,
+            },
+            {
+                account_id: 1002,
+                name: "kartn",
+                nickname: "kartn",
+                display_name: "kartn",
+                status: "idle",
+                current_points: null,
+                current_round: null,
+                games: [
+                    { placement: 2 },
+                    { placement: 1 },
+                    { placement: 3 },
+                ],
+                games_played: 3,
+                total_score: 21.4,
+            },
+            {
+                account_id: 1003,
+                name: "jeeks",
+                nickname: "jeeks",
+                display_name: "jeeks",
+                status: "in_game",
+                current_points: 18800,
+                current_round: "S1",
+                games: [
+                    { placement: 4 },
+                    { placement: 1 },
+                ],
+                games_played: 2,
+                total_score: -2.6,
+            },
+            {
+                account_id: 1004,
+                name: "Geroth",
+                nickname: "Geroth",
+                display_name: "Geroth",
+                status: "finished",
+                current_points: null,
+                current_round: null,
+                games: [
+                    { placement: 1 },
+                    { placement: 4 },
+                    { placement: 2 },
+                    { placement: 3 },
+                ],
+                games_played: 4,
+                total_score: -11.0,
+            },
+        ],
+    };
+    </script>
+    <script src="app.js?v=20260315-player-preview"></script>
+</body>
+</html>

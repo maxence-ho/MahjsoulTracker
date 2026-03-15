@@ -1,0 +1,126 @@
+# Team config for next week's team tracker.
+# This runs in parallel with `config.yaml`:
+# - `config.yaml` feeds the player overlay at `/overlay/`
+# - `config.semifinals.yaml` feeds the team overlay at `/overlay/team.html`
+#
+# Default launch now loads both files automatically:
+#   ./.venv/bin/python -m src.server
+#
+# Optional overrides if you ever need custom paths:
+#   MAHJONG_TRACKER_PLAYER_CONFIG=... MAHJONG_TRACKER_TEAM_CONFIG=... ./.venv/bin/python -m src.server
+# Legacy note: `MAHJONG_TRACKER_CONFIG=...` is treated as a team-config override.
+
+server: "en"
+contest_id: 970393  # Matches config.yaml explicitly for safety.
+
+teams:
+  # Semi-final A
+  - name: "Évry (EVR)"
+    group: "Semi-final B"
+    players:
+      - name: "Phokopi"
+        account_id: 119439982
+      - name: "Jinshia"
+        account_id: 100752739
+      - name: "TlaseZ"
+        account_id: 133870434
+      - name: "Yossuze"
+        account_id: 132987751
+
+  - name: "Villejuif (FDO)"
+    group: "Semi-final B"
+    players:
+      - name: "anneso"
+        account_id: 81775082
+      - name: "PititeMarion"
+        account_id: 89752172
+      - name: "m4hj0ng4dd1ct"
+        account_id: 126875365
+      - name: "Gladiateur"
+        account_id: 113446117
+
+  - name: "Lille (LVDM)"
+    group: "Semi-final B"
+    players:
+      - name: "Hawat"
+        account_id: 0
+      - name: "阴阴南宁仙子"
+        account_id: 12291231
+      - name: "ふくろう"
+        account_id: 78368618
+      - name: "MeNeMeNs"
+        account_id: 127201381
+      - name: "Shinoseka"
+        account_id: 78294116
+
+  - name: "Bourgoin (RON)"
+    group: "Semi-final B"
+    players:
+      - name: "YOOOOOOOOO"
+        account_id: 127171433
+      - name: "SanGluten"
+        account_id: 110305379
+      - name: "TheReed"
+        account_id: 139758306
+      - name: "Theyo__"
+        account_id: 133595111
+
+  # Semi-final B
+  - name: "Cannes (SCT)"
+    group: "Semi-final A"
+    players:
+      - name: "Piezuri"
+        account_id: 123017961
+      - name: "Jimi"
+        account_id: 123438318
+      - name: "Rizmo"
+        account_id: 123087470
+      - name: "Shinki"
+        account_id: 117673198
+
+  - name: "Angers (SHA)"
+    group: "Semi-final A"
+    players:
+      - name: "Arbogad"
+        account_id: 125146857
+      - name: "Bagdor"
+        account_id: 98391017
+      - name: "scratch"
+        account_id: 123267822
+      - name: "LuneBleue"
+        account_id: 113327470
+
+  - name: "Toulouse (SM)"
+    group: "Semi-final A"
+    players:
+      - name: "Geroth"
+        account_id: 122939630
+      - name: "kartn"
+        account_id: 131417954
+      - name: "jeeks"
+        account_id: 90935781
+      - name: "Anh_"
+        account_id: 144042215
+
+  - name: "Bordeaux (FYA)"
+    group: "Semi-final A"
+    players:
+      - name: "muguette"
+        account_id: 0
+      - name: "Bast9"
+        account_id: 97298537
+      - name: "Arrcival"
+        account_id: 114033006
+      - name: "Makoas"
+        account_id: 114708078
+      - name: "Anthonys01"
+        account_id: 122464485
+
+games_count: 4
+starting_points: 25000
+uma: [45, 5, -15, -35]
+oka: 0
+
+host: "0.0.0.0"
+port: 8765
+poll_interval: 10

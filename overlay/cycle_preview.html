@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Alternating Tournament Overlay Preview</title>
+    <link rel="stylesheet" href="cycle.css?v=20260315-cycle-preview">
+</head>
+<body>
+    <div id="cycle-root">
+        <div class="frame-shell" data-view="players">
+            <iframe
+                id="player-frame"
+                class="overlay-frame"
+                title="Player overlay preview"
+                loading="eager"
+                allowtransparency="true"
+            ></iframe>
+        </div>
+        <div class="frame-shell" data-view="teams">
+            <iframe
+                id="team-frame"
+                class="overlay-frame"
+                title="Team overlay preview"
+                loading="eager"
+                allowtransparency="true"
+            ></iframe>
+        </div>
+    </div>
+
+    <script>
+    window.CYCLE_PLAYER_SRC = './player_preview.html';
+    window.CYCLE_TEAM_SRC = './team_preview.html';
+    </script>
+    <script src="cycle.js?v=20260315-cycle-preview"></script>
+</body>
+</html>

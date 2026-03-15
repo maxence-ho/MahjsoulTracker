@@ -1,0 +1,57 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#cycle-root {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+}
+
+.frame-shell {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background: transparent;
+    opacity: 0;
+    transform: scale(1.015);
+    filter: blur(0.16rem);
+    pointer-events: none;
+    transition:
+        opacity 900ms ease,
+        transform 900ms ease,
+        filter 900ms ease;
+    will-change: opacity, transform, filter;
+}
+
+.overlay-frame {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: var(--frame-width, 100%);
+    height: var(--frame-height, 100%);
+    border: 0;
+    background: transparent;
+    display: block;
+    transform-origin: top left;
+    transform: scale(var(--fit-scale, 1));
+}
+
+.frame-shell.active {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+    pointer-events: auto;
+    z-index: 2;
+}

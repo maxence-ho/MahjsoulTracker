@@ -1,0 +1,45 @@
+# Mahjong Soul Tournament Tracker Configuration
+
+# How to get your login credentials:
+# 1. Open Mahjong Soul in browser, open DevTools (F12) → Console
+# 2. Type: GameMgr.Inst.yostar_login_info
+# 3. Copy LOGIN_UID and LOGIN_TOKEN below
+#    (not GameMgr.Inst.yostar_accessToken)
+
+yostar_token: "ac0f9c25434a852382dc4770fdeb95edc6dae897"
+yostar_uid: "14929394196"
+
+# Server: "en", "jp", or "cn"
+server: "en"
+
+# Contest ID (from the in-game tournament lobby URL or settings)
+contest_id: 970393
+
+# Your team players (add/remove as needed — any number supported)
+# account_id may be outdated; nickname is used as fallback for matching
+team_players:
+  - name: "Anh_"
+    account_id: 123885514
+  - name: "kartn"
+    account_id: 131417954
+  - name: "jeeks"
+    account_id: 90935781
+  - name: "Geroth"
+    account_id: 122939630
+
+# Tournament settings
+games_count: 4        # Number of games per player
+starting_points: 25000
+
+# UMA (placement bonuses) — 1st, 2nd, 3rd, 4th
+uma: [45, 5, -15, -35]
+
+# Oka (top bonus from the 30000 return)
+oka: 0
+
+# Server settings
+host: "0.0.0.0"
+port: 8765
+
+# Polling interval in seconds (for checking game results)
+poll_interval: 10
