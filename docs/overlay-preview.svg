@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Mahjong Soul Tournament Tracker preview</title>
+  <desc id="desc">Preview image showing the player overlay and team overlay with mock data.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101825"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#132235"/>
+      <stop offset="100%" stop-color="#0f1724"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <circle cx="1180" cy="140" r="180" fill="#2f855a" opacity="0.16"/>
+  <circle cx="240" cy="760" r="240" fill="#2563eb" opacity="0.12"/>
+
+  <text x="80" y="92" fill="#f8fafc" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="700">
+    Mahjong Soul Tournament Tracker
+  </text>
+  <text x="80" y="132" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="22">
+    Player standings and team totals — real-time broadcast overlays
+  </text>
+
+  <!-- ======================== PLAYER OVERLAY ======================== -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="190" width="620" height="680" rx="30" fill="url(#panel)" stroke="#ffffff" stroke-opacity="0.10"/>
+    <text x="105" y="240" fill="#f8fafc" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Player Overlay</text>
+    <rect x="100" y="258" width="560" height="2" fill="#ffffff" fill-opacity="0.12"/>
+
+    <g font-family="Helvetica, Arial, sans-serif">
+
+      <!-- ── Card 1: Anh_ ── in_game, 34200 pts, E3, games [1,2], total +48.5 -->
+      <rect x="96" y="288" width="568" height="118" rx="18" fill="#0a0a10" fill-opacity="0.78" stroke="#ffffff" stroke-opacity="0.08"/>
+      <!-- Rank -->
+      <text x="124" y="338" fill="#ffd700" font-size="28" font-weight="800">1</text>
+      <!-- Name -->
+      <text x="158" y="339" fill="#eeeeee" font-size="28" font-weight="600">Anh_</text>
+      <!-- Score stack: live-pts (primary) + total (subtle) -->
+      <rect x="394" y="310" width="120" height="38" rx="19" fill="#000000" fill-opacity="0.55" stroke="#86efac" stroke-opacity="0.20"/>
+      <text x="454" y="337" fill="#86efac" font-size="28" font-weight="900" text-anchor="middle">34,200</text>
+      <rect x="524" y="314" width="88" height="30" rx="15" fill="#000000" fill-opacity="0.38"/>
+      <text x="568" y="336" fill="#86efac" font-size="22" font-weight="800" text-anchor="middle">+48.5</text>
+      <!-- Status badge: live E3 -->
+      <rect x="118" y="358" width="86" height="26" rx="8" fill="#4ade80" fill-opacity="0.18"/>
+      <text x="161" y="377" fill="#4ade80" font-size="14" font-weight="700" text-anchor="middle">live E3</text>
+      <!-- Dots: 1st(gold), 2nd(silver), current-game, empty -->
+      <rect x="490" y="360" width="26" height="26" rx="6" fill="#ffd700" fill-opacity="0.25"/><text x="503" y="379" fill="#ffd700" font-size="14" font-weight="800" text-anchor="middle">1</text>
+      <rect x="522" y="360" width="26" height="26" rx="6" fill="#c0c0c0" fill-opacity="0.20"/><text x="535" y="379" fill="#b0b0b0" font-size="14" font-weight="800" text-anchor="middle">2</text>
+      <rect x="554" y="360" width="26" height="26" rx="6" fill="#4ade80" fill-opacity="0.16" stroke="#4ade80" stroke-opacity="0.50"/><circle cx="567" cy="373" r="5" fill="#4ade80" filter="url(#glow)"/>
+      <rect x="586" y="360" width="26" height="26" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/>
+
+      <!-- ── Card 2: kartn ── idle, games [2,1,3], total +21.4 -->
+      <rect x="96" y="420" width="568" height="118" rx="18" fill="#0a0a10" fill-opacity="0.78" stroke="#ffffff" stroke-opacity="0.08"/>
+      <!-- Rank -->
+      <text x="124" y="470" fill="#b0b0b0" font-size="28" font-weight="800">2</text>
+      <!-- Name -->
+      <text x="158" y="471" fill="#eeeeee" font-size="28" font-weight="600">kartn</text>
+      <!-- Total score pill -->
+      <rect x="524" y="446" width="88" height="38" rx="19" fill="#000000" fill-opacity="0.50"/>
+      <text x="568" y="473" fill="#86efac" font-size="28" font-weight="900" text-anchor="middle">+21.4</text>
+      <!-- Status badge: wait -->
+      <rect x="118" y="490" width="56" height="26" rx="8" fill="#ffffff" fill-opacity="0.07"/>
+      <text x="146" y="509" fill="#6a6a78" font-size="14" font-weight="700" text-anchor="middle">wait</text>
+      <!-- Dots: 2nd(silver), 1st(gold), 3rd(bronze), empty -->
+      <rect x="490" y="492" width="26" height="26" rx="6" fill="#c0c0c0" fill-opacity="0.20"/><text x="503" y="511" fill="#b0b0b0" font-size="14" font-weight="800" text-anchor="middle">2</text>
+      <rect x="522" y="492" width="26" height="26" rx="6" fill="#ffd700" fill-opacity="0.25"/><text x="535" y="511" fill="#ffd700" font-size="14" font-weight="800" text-anchor="middle">1</text>
+      <rect x="554" y="492" width="26" height="26" rx="6" fill="#cd7f32" fill-opacity="0.20"/><text x="567" y="511" fill="#cd7f32" font-size="14" font-weight="800" text-anchor="middle">3</text>
+      <rect x="586" y="492" width="26" height="26" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/>
+
+      <!-- ── Card 3: jeeks ── in_game, 18800 pts, S1, games [4,1], total -2.6 -->
+      <rect x="96" y="552" width="568" height="118" rx="18" fill="#0a0a10" fill-opacity="0.78" stroke="#ffffff" stroke-opacity="0.08"/>
+      <!-- Rank -->
+      <text x="124" y="602" fill="#cd7f32" font-size="28" font-weight="800">3</text>
+      <!-- Name -->
+      <text x="158" y="603" fill="#eeeeee" font-size="28" font-weight="600">jeeks</text>
+      <!-- Score stack: live-pts (primary) + total (subtle) -->
+      <rect x="394" y="574" width="120" height="38" rx="19" fill="#000000" fill-opacity="0.55" stroke="#86efac" stroke-opacity="0.20"/>
+      <text x="454" y="601" fill="#86efac" font-size="28" font-weight="900" text-anchor="middle">18,800</text>
+      <rect x="524" y="578" width="88" height="30" rx="15" fill="#000000" fill-opacity="0.38"/>
+      <text x="568" y="600" fill="#fca5a5" font-size="22" font-weight="800" text-anchor="middle">-2.6</text>
+      <!-- Status badge: live S1 -->
+      <rect x="118" y="622" width="82" height="26" rx="8" fill="#4ade80" fill-opacity="0.18"/>
+      <text x="159" y="641" fill="#4ade80" font-size="14" font-weight="700" text-anchor="middle">live S1</text>
+      <!-- Dots: 4th(red), 1st(gold), current-game, empty -->
+      <rect x="490" y="624" width="26" height="26" rx="6" fill="#ff5050" fill-opacity="0.18"/><text x="503" y="643" fill="#ff6666" font-size="14" font-weight="800" text-anchor="middle">4</text>
+      <rect x="522" y="624" width="26" height="26" rx="6" fill="#ffd700" fill-opacity="0.25"/><text x="535" y="643" fill="#ffd700" font-size="14" font-weight="800" text-anchor="middle">1</text>
+      <rect x="554" y="624" width="26" height="26" rx="6" fill="#4ade80" fill-opacity="0.16" stroke="#4ade80" stroke-opacity="0.50"/><circle cx="567" cy="637" r="5" fill="#4ade80" filter="url(#glow)"/>
+      <rect x="586" y="624" width="26" height="26" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/>
+
+      <!-- ── Card 4: Geroth ── finished, games [1,4,2,3], total -11.0 -->
+      <rect x="96" y="684" width="568" height="118" rx="18" fill="#0a0a10" fill-opacity="0.78" stroke="#ffffff" stroke-opacity="0.08"/>
+      <!-- Rank -->
+      <text x="124" y="734" fill="#6a6a75" font-size="28" font-weight="800">4</text>
+      <!-- Name -->
+      <text x="158" y="735" fill="#eeeeee" font-size="28" font-weight="600">Geroth</text>
+      <!-- Total score pill -->
+      <rect x="524" y="710" width="88" height="38" rx="19" fill="#000000" fill-opacity="0.50"/>
+      <text x="568" y="737" fill="#fca5a5" font-size="28" font-weight="900" text-anchor="middle">-11.0</text>
+      <!-- Status badge: done -->
+      <rect x="118" y="754" width="58" height="26" rx="8" fill="#60a5fa" fill-opacity="0.18"/>
+      <text x="147" y="773" fill="#60a5fa" font-size="14" font-weight="700" text-anchor="middle">done</text>
+      <!-- Dots: 1st(gold), 4th(red), 2nd(silver), 3rd(bronze) -->
+      <rect x="490" y="756" width="26" height="26" rx="6" fill="#ffd700" fill-opacity="0.25"/><text x="503" y="775" fill="#ffd700" font-size="14" font-weight="800" text-anchor="middle">1</text>
+      <rect x="522" y="756" width="26" height="26" rx="6" fill="#ff5050" fill-opacity="0.18"/><text x="535" y="775" fill="#ff6666" font-size="14" font-weight="800" text-anchor="middle">4</text>
+      <rect x="554" y="756" width="26" height="26" rx="6" fill="#c0c0c0" fill-opacity="0.20"/><text x="567" y="775" fill="#b0b0b0" font-size="14" font-weight="800" text-anchor="middle">2</text>
+      <rect x="586" y="756" width="26" height="26" rx="6" fill="#cd7f32" fill-opacity="0.20"/><text x="599" y="775" fill="#cd7f32" font-size="14" font-weight="800" text-anchor="middle">3</text>
+    </g>
+  </g>
+
+  <!-- ======================== TEAM OVERLAY ======================== -->
+  <g filter="url(#shadow)">
+    <rect x="720" y="190" width="610" height="680" rx="30" fill="url(#panel)" stroke="#ffffff" stroke-opacity="0.10"/>
+    <text x="755" y="240" fill="#f8fafc" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Team Overlay</text>
+    <rect x="750" y="258" width="550" height="2" fill="#ffffff" fill-opacity="0.12"/>
+
+    <g font-family="Helvetica, Arial, sans-serif">
+
+      <!-- ── Semi-final A ── -->
+      <rect x="740" y="284" width="570" height="290" rx="18" fill="#0a0a10" fill-opacity="0.82" stroke="#ffffff" stroke-opacity="0.09"/>
+
+      <!-- Header row -->
+      <text x="770" y="318" fill="#9ca3af" font-size="14" font-weight="800" letter-spacing="1.2">TEAM</text>
+      <text x="1142" y="318" fill="#9ca3af" font-size="14" font-weight="800" letter-spacing="1.2" text-anchor="end">FINAL</text>
+      <text x="1042" y="318" fill="#9ca3af" font-size="14" font-weight="800" letter-spacing="1.2" text-anchor="end">~</text>
+      <line x1="770" y1="332" x2="1290" y2="332" stroke="#ffffff" stroke-opacity="0.08"/>
+
+      <!-- Row 1: Team A1 — rank 1, prov +129.2, final +118.4 -->
+      <text x="770" y="370" fill="#ffd700" font-size="20" font-weight="800">1</text>
+      <text x="800" y="370" fill="#f5f5f5" font-size="19" font-weight="700">Team A1</text>
+      <rect x="980" y="351" width="76" height="28" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.16" stroke-dasharray="4 3"/>
+      <text x="1038" y="372" fill="#cbd5e1" font-size="16" font-weight="800" text-anchor="end">+129.2</text>
+      <rect x="1082" y="348" width="88" height="32" rx="16" fill="#000000" fill-opacity="0.52"/>
+      <text x="1126" y="371" fill="#86efac" font-size="20" font-weight="900" text-anchor="middle">+118.4</text>
+      <line x1="770" y1="388" x2="1290" y2="388" stroke="#ffffff" stroke-opacity="0.06"/>
+
+      <!-- Row 2: Team A2 — rank 2, no provisional, final +74.8 -->
+      <text x="770" y="424" fill="#b0b0b0" font-size="20" font-weight="800">2</text>
+      <text x="800" y="424" fill="#f5f5f5" font-size="19" font-weight="700">Team A2</text>
+      <rect x="1082" y="402" width="88" height="32" rx="16" fill="#000000" fill-opacity="0.52"/>
+      <text x="1126" y="425" fill="#86efac" font-size="20" font-weight="900" text-anchor="middle">+74.8</text>
+      <line x1="770" y1="442" x2="1290" y2="442" stroke="#ffffff" stroke-opacity="0.06"/>
+
+      <!-- Row 3: Team A3 — rank 3, prov +3.7, final -11.6 -->
+      <text x="770" y="478" fill="#cd7f32" font-size="20" font-weight="800">3</text>
+      <text x="800" y="478" fill="#f5f5f5" font-size="19" font-weight="700">Team A3</text>
+      <rect x="994" y="459" width="60" height="28" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.16" stroke-dasharray="4 3"/>
+      <text x="1038" y="480" fill="#cbd5e1" font-size="16" font-weight="800" text-anchor="end">+3.7</text>
+      <rect x="1082" y="456" width="88" height="32" rx="16" fill="#000000" fill-opacity="0.52"/>
+      <text x="1126" y="479" fill="#fca5a5" font-size="20" font-weight="900" text-anchor="middle">-11.6</text>
+      <line x1="770" y1="496" x2="1290" y2="496" stroke="#ffffff" stroke-opacity="0.06"/>
+
+      <!-- Row 4: Team A4 — rank 4, no provisional, final -42.5 -->
+      <text x="770" y="532" fill="#6a6a75" font-size="20" font-weight="800">4</text>
+      <text x="800" y="532" fill="#f5f5f5" font-size="19" font-weight="700">Team A4</text>
+      <rect x="1082" y="510" width="88" height="32" rx="16" fill="#000000" fill-opacity="0.52"/>
+      <text x="1126" y="533" fill="#fca5a5" font-size="20" font-weight="900" text-anchor="middle">-42.5</text>
+
+      <!-- ── Semi-final B ── -->
+      <rect x="740" y="590" width="570" height="290" rx="18" fill="#0a0a10" fill-opacity="0.82" stroke="#ffffff" stroke-opacity="0.09"/>
+
+      <!-- Header row -->
+      <text x="770" y="624" fill="#9ca3af" font-size="14" font-weight="800" letter-spacing="1.2">TEAM</text>
+      <text x="1142" y="624" fill="#9ca3af" font-size="14" font-weight="800" letter-spacing="1.2" text-anchor="end">FINAL</text>
+      <text x="1042" y="624" fill="#9ca3af" font-size="14" font-weight="800" letter-spacing="1.2" text-anchor="end">~</text>
+      <line x1="770" y1="638" x2="1290" y2="638" stroke="#ffffff" stroke-opacity="0.08"/>
+
+      <!-- Row 1: Team B1 — rank 1, no provisional, final +81.1 -->
+      <text x="770" y="676" fill="#ffd700" font-size="20" font-weight="800">1</text>
+      <text x="800" y="676" fill="#f5f5f5" font-size="19" font-weight="700">Team B1</text>
+      <rect x="1082" y="654" width="88" height="32" rx="16" fill="#000000" fill-opacity="0.52"/>
+      <text x="1126" y="677" fill="#86efac" font-size="20" font-weight="900" text-anchor="middle">+81.1</text>
+      <line x1="770" y1="694" x2="1290" y2="694" stroke="#ffffff" stroke-opacity="0.06"/>
+
+      <!-- Row 2: Team B2 — rank 2, prov +35.0, final +26.4 -->
+      <text x="770" y="730" fill="#b0b0b0" font-size="20" font-weight="800">2</text>
+      <text x="800" y="730" fill="#f5f5f5" font-size="19" font-weight="700">Team B2</text>
+      <rect x="990" y="711" width="64" height="28" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.16" stroke-dasharray="4 3"/>
+      <text x="1038" y="732" fill="#cbd5e1" font-size="16" font-weight="800" text-anchor="end">+35.0</text>
+      <rect x="1082" y="708" width="88" height="32" rx="16" fill="#000000" fill-opacity="0.52"/>
+      <text x="1126" y="731" fill="#86efac" font-size="20" font-weight="900" text-anchor="middle">+26.4</text>
+      <line x1="770" y1="748" x2="1290" y2="748" stroke="#ffffff" stroke-opacity="0.06"/>
+
+      <!-- Row 3: Team B3 — rank 3, no provisional, final -8.3 -->
+      <text x="770" y="784" fill="#cd7f32" font-size="20" font-weight="800">3</text>
+      <text x="800" y="784" fill="#f5f5f5" font-size="19" font-weight="700">Team B3</text>
+      <rect x="1082" y="762" width="88" height="32" rx="16" fill="#000000" fill-opacity="0.52"/>
+      <text x="1126" y="785" fill="#fca5a5" font-size="20" font-weight="900" text-anchor="middle">-8.3</text>
+      <line x1="770" y1="802" x2="1290" y2="802" stroke="#ffffff" stroke-opacity="0.06"/>
+
+      <!-- Row 4: Team B4 — rank 4, no provisional, final -37.2 -->
+      <text x="770" y="838" fill="#6a6a75" font-size="20" font-weight="800">4</text>
+      <text x="800" y="838" fill="#f5f5f5" font-size="19" font-weight="700">Team B4</text>
+      <rect x="1082" y="816" width="88" height="32" rx="16" fill="#000000" fill-opacity="0.52"/>
+      <text x="1126" y="839" fill="#fca5a5" font-size="20" font-weight="900" text-anchor="middle">-37.2</text>
+    </g>
+  </g>
+</svg>
